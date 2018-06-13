@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seniverse API Test Page</title>
+  <script type="text/javascript" src="./jquery.js"></script>
+</head>
+<body>
+  <div id="content"></div>
+<script>
+  var UID = "HE1806131459411315"; // 测试用 用户ID，请更换成您自己的用户ID
+  var KEY = "e9d51d1a6e114ea28b3fc777a6b19816 "; // 测试用key，请更换成您自己的 Key
+  var API = "https://free-api.heweather.com/s6/weather/forecast?parameters"; // 获取天气实况
+
+  $.ajax({
+    url: "https://free-api.heweather.com/s6/weather/now?location=xian&key=e9d51d1a6e114ea28b3fc777a6b19816&",
+    success: function(res) {
+      console.log(res)
+    }
+  })
+  
+</script>
+</body>
+</html>
